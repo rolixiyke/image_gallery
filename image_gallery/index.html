@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image Gallery</h1>
+            <input 
+                type="text" 
+                id="searchInput" 
+                class="search-input" 
+                placeholder="Search images..."
+            >
+        </header>
+
+        <main>
+            <div class="gallery" id="gallery">
+                <!-- Gallery items will be inserted here by JavaScript -->
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Image Gallery. All rights reserved.</p>
+            <p>BrainEx Ventures</p>
+        </footer>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <img id="lightboxImage" src="" alt="">
+            <p id="imageTitle"></p>
+            <div class="lightbox-nav">
+                <button id="prevBtn" class="nav-btn">&#10094;</button>
+                <button id="nextBtn" class="nav-btn">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
